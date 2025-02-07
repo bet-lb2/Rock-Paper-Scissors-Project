@@ -38,23 +38,3 @@ function playRound(humanChoice, computerChoice) {
         }
     }
 }
-
-function playGame() {
-    // 5 loops with playRound func
-    for (let i = 0; i < 5; i++) {
-        const humanSelect = getHumanChoice();
-        const computerSelect = getComputerChoice();
-        console.log(playRound(humanSelect, computerSelect));
-    }
-    // return text depending on each scores
-    let resultText = `Your Score: ${humanScore}\nComputer Score: ${computerScore}\n`;
-    if (humanScore > computerScore) {
-        return resultText + "So you win the game.";
-    } else if (humanScore === computerScore) {
-        return resultText + "So this game is tie.";
-    } else {
-        return resultText + "So you lose the game.";
-    }
-}
-// comment out this line and start the game
-// console.log(playGame());
