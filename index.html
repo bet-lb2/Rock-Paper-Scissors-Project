@@ -7,5 +7,23 @@
 </head>
 <body>
     
+    <script>
+        function getComputerChoice() {
+            // get random number by Math.random() and Math.floor
+            const randomNum = Math.floor(Math.random() * 3);
+            // return valid string (Rock, Paper, Scissors) along with random number
+            return randomNum === 0 ? "Rock" : randomNum === 1 ? "Paper" : "Scissors";
+        }
+        
+        function getHumanChoice() {
+            // get user input by window.prompt
+            const userInput = window.prompt("Your choice is: " , "");
+            // return human choice
+            return userInput;
+        }
+        
+        let humanScore = 0;
+        let computerScore = 0;
+    </script>
 </body>
 </html>
